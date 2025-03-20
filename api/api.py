@@ -106,7 +106,7 @@ def get_weather(flight_time, lat, lon):
     return final_df
 
 
-def process_flights(flights):
+def process_flights(flights) -> list[dict, pd.DataFrame, pd.DataFrame]:
     results = []
 
     for flight in flights:
